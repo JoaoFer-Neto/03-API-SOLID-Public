@@ -1,0 +1,28 @@
+{
+  "name": "03-api-solid",
+  "version": "1.0.0",
+  "description": "<!-- # Setup ```sh docker run --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql ``` --> # IGNITE-API-SOLID",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.2.2",
+    "@types/node": "20.11.25",
+    "eslint": "8.57.0",
+    "eslint-plugin-simple-import-sort": "12.0.0",
+    "tsup": "8.0.2",
+    "tsx": "4.7.1",
+    "typescript": "5.4.2"
+  },
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "fastify": "4.26.2",
+    "zod": "3.22.4"
+  }
+}
